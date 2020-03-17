@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>doe</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <div><h3>Doe Sangue! Doe Vida.</h3></div>
+      <h5>Um Doação pode salvar varias vidas...</h5>
+      <p>% de doadores no Brasil.</p>
+      <p>quantidade de sangue necessaria por dia.</p>
+    </header>
+    <main>
+      <button class="btn1">Quero Ajudar!</button>
+      <section>
+        <form class="form" action="/" method="POST">
+          <input type="text" name="name" id="" placeholder="nome completo">
+          <input type="text" name="email" id="" placeholder="E-mail">
+          <input type="text" name="blood" id="" placeholder="Tipo Sanguíneo">
+          <button class="btn2" type="submit">ENVIAR</button>
+        </form>
+      </section>
+      <section class="doadores">
+        {%for donor in donors%}
+        <div><p>{{donor.blood}}</p> 
+          <div>{{donor.name}}</div>
+        </div>
+        {%endfor%}
+      </section>
+    </main>
+    <footer>iLoveJavaScript</footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
