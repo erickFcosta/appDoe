@@ -14,7 +14,7 @@ const data = new Pool ({
     host : 'localhost',
     port : 5432,
     user : 'postgres',
-    password : '620014000',
+    password : '0000',
     database : 'doe'
 });
 //conf o template engine
